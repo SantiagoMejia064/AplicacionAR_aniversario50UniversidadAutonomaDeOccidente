@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "AplicacionAR_aniversario50UniversidadAutonomaDeOccidente.sln"
+    "dotnet.defaultSolution": "celebracion50aniosUAO_aplicacionAR.sln"
 }
