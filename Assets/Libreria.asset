@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: Libreria
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5599664469843452390
+  m_GuidHigh: 17034672241138188426
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5244116568888350884
+      m_GuidHigh: 2516958533684788894
+    m_SerializedTextureGuid:
+      m_GuidLow: 12832071117950127604
+      m_GuidHigh: 8159849210928977690
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: tarejta de presentacion_Mesa de trabajo 1
+    m_Texture: {fileID: 0}
