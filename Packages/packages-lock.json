@@ -1,11 +1,5 @@
 {
   "dependencies": {
-    "com.soupday.cc3_unity_tools": {
-      "version": "file:C:/cc_unity_tools_3D",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
-    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,
