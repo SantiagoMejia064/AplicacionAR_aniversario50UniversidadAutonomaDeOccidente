@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class controladorAsistente : MonoBehaviour
 {
-    private ConvaiActionsHandler convaiActionsHandler;
+    [SerializeField] private ConvaiActionsHandler convaiActionsHandler;
 
     public void Awake()
     {

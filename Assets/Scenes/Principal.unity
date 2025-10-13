@@ -2062,12 +2062,12 @@ GameObject:
   - component: {fileID: 325556913}
   - component: {fileID: 325556912}
   m_Layer: 0
-  m_Name: Seccion los 2000
+  m_Name: Seccion los 2000 trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &325556911
 Transform:
   m_ObjectHideFlags: 0
@@ -2096,13 +2096,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   convaiNPC: {fileID: 1552119996}
-  selectedTriggerIndex: 3
+  selectedTriggerIndex: 1
   availableTriggers:
   - Inicio de escena
+  - 90-2000 trigger
+  - Inicio-70 trigger
+  - 2000-2010 trigger
   - 70-80 trigger
   - 80-90 trigger
-  - 90-2000 trigger
-  - 2000-2010 trigger
   onTriggerEvent:
     m_PersistentCalls:
       m_Calls:
@@ -3297,12 +3298,12 @@ GameObject:
   - component: {fileID: 579899450}
   - component: {fileID: 579899449}
   m_Layer: 0
-  m_Name: Seccion los 70
+  m_Name: Seccion los 70 trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &579899449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3316,13 +3317,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   convaiNPC: {fileID: 1552119996}
-  selectedTriggerIndex: 0
+  selectedTriggerIndex: 2
   availableTriggers:
   - Inicio de escena
+  - 90-2000 trigger
+  - Inicio-70 trigger
+  - 2000-2010 trigger
   - 70-80 trigger
   - 80-90 trigger
-  - 90-2000 trigger
-  - 2000-2010 trigger
   onTriggerEvent:
     m_PersistentCalls:
       m_Calls:
@@ -7097,7 +7099,7 @@ GameObject:
   - component: {fileID: 1152474279}
   - component: {fileID: 1152474278}
   m_Layer: 0
-  m_Name: Seccion inicio
+  m_Name: Seccion inicio trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7134,10 +7136,11 @@ MonoBehaviour:
   selectedTriggerIndex: 0
   availableTriggers:
   - Inicio de escena
+  - 90-2000 trigger
+  - Inicio-70 trigger
+  - 2000-2010 trigger
   - 70-80 trigger
   - 80-90 trigger
-  - 90-2000 trigger
-  - 2000-2010 trigger
   onTriggerEvent:
     m_PersistentCalls:
       m_Calls:
@@ -10295,12 +10298,12 @@ GameObject:
   - component: {fileID: 1644413207}
   - component: {fileID: 1644413206}
   m_Layer: 0
-  m_Name: Seccion los 80
+  m_Name: Seccion los 80 trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1644413205
 Transform:
   m_ObjectHideFlags: 0
@@ -10329,13 +10332,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   convaiNPC: {fileID: 1552119996}
-  selectedTriggerIndex: 1
+  selectedTriggerIndex: 4
   availableTriggers:
   - Inicio de escena
+  - 90-2000 trigger
+  - Inicio-70 trigger
+  - 2000-2010 trigger
   - 70-80 trigger
   - 80-90 trigger
-  - 90-2000 trigger
-  - 2000-2010 trigger
   onTriggerEvent:
     m_PersistentCalls:
       m_Calls:
@@ -10810,12 +10814,12 @@ GameObject:
   - component: {fileID: 1781503329}
   - component: {fileID: 1781503328}
   m_Layer: 0
-  m_Name: Seccion los 2010
+  m_Name: Seccion los 2010 trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1781503327
 Transform:
   m_ObjectHideFlags: 0
@@ -10844,13 +10848,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   convaiNPC: {fileID: 1552119996}
-  selectedTriggerIndex: 4
+  selectedTriggerIndex: 3
   availableTriggers:
   - Inicio de escena
+  - 90-2000 trigger
+  - Inicio-70 trigger
+  - 2000-2010 trigger
   - 70-80 trigger
   - 80-90 trigger
-  - 90-2000 trigger
-  - 2000-2010 trigger
   onTriggerEvent:
     m_PersistentCalls:
       m_Calls:
@@ -12421,12 +12426,12 @@ GameObject:
   - component: {fileID: 1962967738}
   - component: {fileID: 1962967737}
   m_Layer: 0
-  m_Name: Seccion los 90
+  m_Name: Seccion los 90 trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1962967737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12440,13 +12445,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   convaiNPC: {fileID: 1552119996}
-  selectedTriggerIndex: 2
+  selectedTriggerIndex: 5
   availableTriggers:
   - Inicio de escena
+  - 90-2000 trigger
+  - Inicio-70 trigger
+  - 2000-2010 trigger
   - 70-80 trigger
   - 80-90 trigger
-  - 90-2000 trigger
-  - 2000-2010 trigger
   onTriggerEvent:
     m_PersistentCalls:
       m_Calls:
@@ -13563,7 +13569,19 @@ MonoBehaviour:
         m_Calls: []
     onSectionEnd:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 579899448}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
   - id: a1bbfb72-a858-11f0-b675-42010a7be025
     onSectionStart:
       m_PersistentCalls:
@@ -13608,7 +13626,19 @@ MonoBehaviour:
         m_Calls: []
     onSectionEnd:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1644413204}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
   - id: e27d8496-a858-11f0-89f9-42010a7be025
     onSectionStart:
       m_PersistentCalls:
@@ -13634,7 +13664,19 @@ MonoBehaviour:
         m_Calls: []
     onSectionEnd:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1962967736}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
   - id: 5fb6935e-a858-11f0-95a5-42010a7be025
     onSectionStart:
       m_PersistentCalls:
@@ -13660,14 +13702,38 @@ MonoBehaviour:
         m_Calls: []
     onSectionEnd:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 325556910}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
   - id: 6db378d6-a7dc-11f0-833d-42010a7be025
     onSectionStart:
       m_PersistentCalls:
         m_Calls: []
     onSectionEnd:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1781503326}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
   - id: 797ddde6-a7dc-11f0-aec4-42010a7be025
     onSectionStart:
       m_PersistentCalls:
@@ -13679,6 +13745,25 @@ MonoBehaviour:
     onSectionStart:
       m_PersistentCalls:
         m_Calls: []
+    onSectionEnd:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 702132ba-a864-11f0-80f2-42010a7be025
+    onSectionStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2088058351}
+          m_TargetAssemblyTypeName: controladorAsistente, Assembly-CSharp
+          m_MethodName: MoveToPosition
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 579899448}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     onSectionEnd:
       m_PersistentCalls:
         m_Calls: []
@@ -13698,14 +13783,12 @@ MonoBehaviour:
   - sectionId: a1bbfb72-a858-11f0-b675-42010a7be025
     sectionName: 90-2000
     behaviorTreeConstants: 
-    objective: "Perfecto, ahora indicar\xE1s al usuario que se dirija a la secci\xF3n
-      de los a\xF1os 2000"
+    objective: 
     characterId: 599ab778-a61b-11f0-ad03-42010a7be025
   - sectionId: 32bf0f36-a856-11f0-81d8-42010a7be025
     sectionName: 70-80
     behaviorTreeConstants: 
-    objective: "Perfecto, ahora indicar\xE1s al usuario que se dirija a la secci\xF3n
-      de los a\xF1os 80"
+    objective: 
     characterId: 599ab778-a61b-11f0-ad03-42010a7be025
   - sectionId: 4a71fea6-a7dc-11f0-829a-42010a7be025
     sectionName: los 70's
@@ -13725,8 +13808,7 @@ MonoBehaviour:
   - sectionId: e27d8496-a858-11f0-89f9-42010a7be025
     sectionName: 2000-2010
     behaviorTreeConstants: 
-    objective: "Perfecto, ahora indicar\xE1s al usuario que se dirija a la secci\xF3n
-      de los a\xF1os 2010"
+    objective: 
     characterId: 599ab778-a61b-11f0-ad03-42010a7be025
   - sectionId: 5f44dd94-a7dc-11f0-95d7-42010a7be025
     sectionName: Los 80's
@@ -13747,8 +13829,9 @@ MonoBehaviour:
   - sectionId: 5fb6935e-a858-11f0-95a5-42010a7be025
     sectionName: 80-90
     behaviorTreeConstants: 
-    objective: "\nPerfecto, ahora indicar\xE1s al usuario que se dirija a la secci\xF3n
-      de los a\xF1os 90"
+    objective: '
+
+'
     characterId: 599ab778-a61b-11f0-ad03-42010a7be025
   - sectionId: 66deb2b4-a7dc-11f0-829a-42010a7be025
     sectionName: Los 90's
@@ -13808,31 +13891,41 @@ MonoBehaviour:
       quedara abierto para responder cualquier pregunta. O volver a cualquier secci\xF3n
       en especifico segun lo pida el usuario"
     characterId: 599ab778-a61b-11f0-ad03-42010a7be025
+  - sectionId: 702132ba-a864-11f0-80f2-42010a7be025
+    sectionName: Inicio-70
+    behaviorTreeConstants: 
+    objective: 
+    characterId: 599ab778-a61b-11f0-ad03-42010a7be025
   triggerDataList:
   - triggerId: b22ca3fe-a857-11f0-89f9-42010a7be025
     triggerName: Inicio de escena
     triggerMessage: "El usuario se acerc\xF3 por primera vez para tener una interacci\xF3n"
     destinationSection: 396a8ad8-a7dc-11f0-95d7-42010a7be025
     characterId: 599ab778-a61b-11f0-ad03-42010a7be025
-  - triggerId: fe050ab0-a856-11f0-89f9-42010a7be025
-    triggerName: 70-80 trigger
-    triggerMessage: "El usuario lleg\xF3 a la secci\xF3n de los a\xF1os 80"
-    destinationSection: 
-    characterId: 599ab778-a61b-11f0-ad03-42010a7be025
-  - triggerId: 56046fac-a858-11f0-89f9-42010a7be025
-    triggerName: 80-90 trigger
-    triggerMessage: "El usuario lleg\xF3 a la secci\xF3n de los a\xF1os 90"
-    destinationSection: 
-    characterId: 599ab778-a61b-11f0-ad03-42010a7be025
   - triggerId: 8b25a2c8-a858-11f0-83cb-42010a7be025
     triggerName: 90-2000 trigger
-    triggerMessage: "El usuario lleg\xF3 a la secci\xF3n de los a\xF1os 2000"
-    destinationSection: 
+    triggerMessage: "Ha llegado a la secci\xF3n de los a\xF1os 2000"
+    destinationSection: 6db378d6-a7dc-11f0-833d-42010a7be025
+    characterId: 599ab778-a61b-11f0-ad03-42010a7be025
+  - triggerId: 5fac767e-a864-11f0-bae8-42010a7be025
+    triggerName: Inicio-70 trigger
+    triggerMessage: "Ha llegado a la secci\xF3n de los a\xF1os 70"
+    destinationSection: 4a71fea6-a7dc-11f0-829a-42010a7be025
     characterId: 599ab778-a61b-11f0-ad03-42010a7be025
   - triggerId: d6601606-a858-11f0-8eb6-42010a7be025
     triggerName: 2000-2010 trigger
-    triggerMessage: "El usuario lleg\xF3 a la secci\xF3n de los a\xF1os 2010"
-    destinationSection: 
+    triggerMessage: "Ha llegado a la secci\xF3n de los a\xF1os 2010"
+    destinationSection: 797ddde6-a7dc-11f0-aec4-42010a7be025
+    characterId: 599ab778-a61b-11f0-ad03-42010a7be025
+  - triggerId: fe050ab0-a856-11f0-89f9-42010a7be025
+    triggerName: 70-80 trigger
+    triggerMessage: "Ha llegado a la secci\xF3n de los a\xF1os 80"
+    destinationSection: 5f44dd94-a7dc-11f0-95d7-42010a7be025
+    characterId: 599ab778-a61b-11f0-ad03-42010a7be025
+  - triggerId: 56046fac-a858-11f0-89f9-42010a7be025
+    triggerName: 80-90 trigger
+    triggerMessage: "Ha llegado a la secci\xF3n de los a\xF1os 90"
+    destinationSection: 66deb2b4-a7dc-11f0-829a-42010a7be025
     characterId: 599ab778-a61b-11f0-ad03-42010a7be025
 --- !u!114 &2088058351
 MonoBehaviour:
