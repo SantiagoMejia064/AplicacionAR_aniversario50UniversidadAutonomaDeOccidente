@@ -118,14 +118,18 @@ namespace Convai.Scripts.Runtime.Features
             _playActionListCoroutine = StartCoroutine(PlayActionList());
         }
 
-        private void OnEnable() {
-            if ( _playActionListCoroutine != null ) {
+        private void OnEnable()
+        {
+            if (_playActionListCoroutine != null)
+            {
                 _playActionListCoroutine = StartCoroutine(PlayActionList());
             }
         }
-        
-        private void OnDisable() {
-            if ( _playActionListCoroutine != null ) {
+
+        private void OnDisable()
+        {
+            if (_playActionListCoroutine != null)
+            {
                 StopCoroutine(_playActionListCoroutine);
             }
         }
@@ -236,11 +240,11 @@ namespace Convai.Scripts.Runtime.Features
 
             // Calculate the distance
             for (int j = 1; j <= t.Length; j++)
-            for (int i = 1; i <= s.Length; i++)
-            {
-                int cost = s[i - 1] == t[j - 1] ? 0 : 1;
-                d[i][j] = Math.Min(Math.Min(d[i - 1][j] + 1, d[i][j - 1] + 1), d[i - 1][j - 1] + cost);
-            }
+                for (int i = 1; i <= s.Length; i++)
+                {
+                    int cost = s[i - 1] == t[j - 1] ? 0 : 1;
+                    d[i][j] = Math.Min(Math.Min(d[i - 1][j] + 1, d[i][j - 1] + 1), d[i - 1][j - 1] + cost);
+                }
 
             return d[s.Length][t.Length];
         }
@@ -498,7 +502,8 @@ namespace Convai.Scripts.Runtime.Features
         [Serializable]
         public class ActionMethod
         {
-            [FormerlySerializedAs("Action")] [SerializeField]
+            [FormerlySerializedAs("Action")]
+            [SerializeField]
             public string action;
 
             [SerializeField] public string animationName;
