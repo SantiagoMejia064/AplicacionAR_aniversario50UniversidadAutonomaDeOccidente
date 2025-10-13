@@ -313,11 +313,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2639540652976512734, guid: 2a09da1d04f25174da5f37449608e885, type: 3}
       propertyPath: characterID
-      value: a623aa3a-453d-11f0-96f2-42010a7be01f
+      value: 599ab778-a61b-11f0-ad03-42010a7be025
       objectReference: {fileID: 0}
     - target: {fileID: 2639540652976512734, guid: 2a09da1d04f25174da5f37449608e885, type: 3}
       propertyPath: characterName
-      value: Amelia
+      value: Laura
       objectReference: {fileID: 0}
     - target: {fileID: 2639540652976512734, guid: 2a09da1d04f25174da5f37449608e885, type: 3}
       propertyPath: initializeSessionID
@@ -980,50 +980,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394272973}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &515100269
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 515100271}
-  - component: {fileID: 515100270}
-  m_Layer: 0
-  m_Name: TestMic
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &515100270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 515100269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c74419e5bf13144a8cbc086cb629ad8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &515100271
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 515100269}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3614924, y: 1.4350432, z: 0.0020665175}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &543830450
 GameObject:
   m_ObjectHideFlags: 0
@@ -5588,4 +5544,3 @@ SceneRoots:
   - {fileID: 2030401861}
   - {fileID: 1910847929}
   - {fileID: 1719958929}
-  - {fileID: 515100271}
