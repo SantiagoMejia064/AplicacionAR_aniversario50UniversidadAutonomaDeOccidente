@@ -562,7 +562,7 @@ namespace Convai.Scripts.Runtime.Features
             ActionEnded?.Invoke("Crouch", _currentNPC.gameObject);
         }
 
-        private IEnumerator MoveTo(GameObject target)
+        public IEnumerator MoveTo(GameObject target)
         {
             if (!IsTargetValid(target)) yield break;
 
@@ -571,6 +571,7 @@ namespace Convai.Scripts.Runtime.Features
 
             Animator animator = _currentNPC.GetComponent<Animator>();
             NavMeshAgent navMeshAgent = _currentNPC.GetComponent<NavMeshAgent>();
+            navMeshAgent.enabled = true;
 
             SetupAnimationAndNavigation(animator, navMeshAgent);
 
@@ -581,6 +582,8 @@ namespace Convai.Scripts.Runtime.Features
             yield return MoveTowardsTarget(target, navMeshAgent);
 
             FinishMovement(animator, target);
+
+            navMeshAgent.enabled = false;
         }
 
         private bool IsTargetValid(GameObject target)
@@ -597,8 +600,8 @@ namespace Convai.Scripts.Runtime.Features
         private void SetupAnimationAndNavigation(Animator animator, NavMeshAgent navMeshAgent)
         {
             animator.CrossFade(Animator.StringToHash("Walking"), 0.01f);
-            animator.applyRootMotion = false;
-            navMeshAgent.updateRotation = false;
+            //animator.applyRootMotion = false;
+            //navMeshAgent.updateRotation = false;
         }
 
         private Vector3 CalculateTargetDestination(GameObject target)
@@ -647,7 +650,7 @@ namespace Convai.Scripts.Runtime.Features
         {
             animator.CrossFade(Animator.StringToHash("Idle"), 0.1f);
             if (_actions.Count == 1 && Camera.main != null) StartCoroutine(RotateTowardsCamera());
-            animator.applyRootMotion = true;
+            //animator.applyRootMotion = true;
             ActionEnded?.Invoke("MoveTo", target);
         }
 
