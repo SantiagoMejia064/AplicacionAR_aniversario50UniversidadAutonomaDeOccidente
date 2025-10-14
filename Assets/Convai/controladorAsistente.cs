@@ -25,19 +25,19 @@ public class ControladorAsistenteCamara : MonoBehaviour
         // Solo triggers de los cubos
         switch (other.gameObject.name)
         {
-            case "Seccion los 70 trigger":
+            case "Seccion los 70 Trigger":
                 TeletransportarAsistente(seccion70s, seccionID70s);
                 break;
-            case "Seccion los 80 trigger":
+            case "Seccion los 80 Trigger":
                 TeletransportarAsistente(seccion80s, seccionID80s);
                 break;
-            case "Seccion los 90 trigger":
+            case "Seccion los 90 Trigger":
                 TeletransportarAsistente(seccion90s, seccionID90s);
                 break;
-            case "Seccion los 2000 trigger":
+            case "Seccion los 2000 Trigger":
                 TeletransportarAsistente(seccion2000, seccionID2000);
                 break;
-            case "Seccion los 2010 trigger":
+            case "Seccion los 2010 Trigger":
                 TeletransportarAsistente(seccion2010, seccionID2010);
                 break;
             default:
@@ -59,7 +59,7 @@ public class ControladorAsistenteCamara : MonoBehaviour
         assistant.transform.rotation = target.rotation;
 
         Debug.Log("Asistente movido a: " + target.position);
-        
+
         /*
         // Activar sección de Convai si se indica
         if (activarSeccionConvai && !string.IsNullOrEmpty(seccionID))
