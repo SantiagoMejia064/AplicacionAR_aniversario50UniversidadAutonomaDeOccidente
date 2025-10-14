@@ -1448,6 +1448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.2
   speed: 2.5
+  soloHorizontal: 0
 --- !u!114 &229024756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2209,14 +2210,13 @@ GameObject:
   m_Component:
   - component: {fileID: 325556911}
   - component: {fileID: 325556913}
-  - component: {fileID: 325556912}
   m_Layer: 0
   m_Name: Seccion los 2000 trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &325556911
 Transform:
   m_ObjectHideFlags: 0
@@ -2232,42 +2232,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 591316205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &325556912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 325556910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c783ed73e64a204ebf38b93c054b566, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  convaiNPC: {fileID: 1552119996}
-  selectedTriggerIndex: 1
-  availableTriggers:
-  - Inicio de escena
-  - 90-2000 trigger
-  - Inicio-70 trigger
-  - 2000-2010 trigger
-  - 70-80 trigger
-  - 80-90 trigger
-  onTriggerEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 325556910}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!65 &325556913
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2540,6 +2504,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 377459759}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &380637283 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3610757981640571484, guid: 69dd98fa71bd5e649969b163d693f61b, type: 3}
+  m_PrefabInstance: {fileID: 392833010}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &381185130
 GameObject:
   m_ObjectHideFlags: 0
@@ -2807,13 +2776,65 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8995187496934191307, guid: 69dd98fa71bd5e649969b163d693f61b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.16
+      value: -6.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995187496934191307, guid: 69dd98fa71bd5e649969b163d693f61b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.28126913
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995187496934191307, guid: 69dd98fa71bd5e649969b163d693f61b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995187496934191307, guid: 69dd98fa71bd5e649969b163d693f61b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.959629
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995187496934191307, guid: 69dd98fa71bd5e649969b163d693f61b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8995187496934191307, guid: 69dd98fa71bd5e649969b163d693f61b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 147.328
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8995187496934191311, guid: 69dd98fa71bd5e649969b163d693f61b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 392833012}
   m_SourcePrefab: {fileID: 100100000, guid: 69dd98fa71bd5e649969b163d693f61b, type: 3}
+--- !u!1 &392833011 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8995187496934191311, guid: 69dd98fa71bd5e649969b163d693f61b, type: 3}
+  m_PrefabInstance: {fileID: 392833010}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &392833012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392833011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5541e60c302096e409b2f7016f9dfb6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  assistant: {fileID: 380637283}
+  seccion70s: {fileID: 579899451}
+  seccion80s: {fileID: 1644413205}
+  seccion90s: {fileID: 1962967739}
+  seccion2000: {fileID: 325556911}
+  seccion2010: {fileID: 1781503327}
+  activarSeccionConvai: 1
+  seccionID70s: Seccion_70s
+  seccionID80s: Seccion_80s
+  seccionID90s: Seccion_90s
+  seccionID2000: Seccion_2000
+  seccionID2010: Seccion_2010
 --- !u!1 &395658404
 GameObject:
   m_ObjectHideFlags: 0
@@ -3453,50 +3474,13 @@ GameObject:
   m_Component:
   - component: {fileID: 579899451}
   - component: {fileID: 579899450}
-  - component: {fileID: 579899449}
   m_Layer: 0
   m_Name: Seccion los 70 trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &579899449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579899448}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c783ed73e64a204ebf38b93c054b566, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  convaiNPC: {fileID: 1552119996}
-  selectedTriggerIndex: 2
-  availableTriggers:
-  - Inicio de escena
-  - 90-2000 trigger
-  - Inicio-70 trigger
-  - 2000-2010 trigger
-  - 70-80 trigger
-  - 80-90 trigger
-  onTriggerEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 579899448}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  m_IsActive: 1
 --- !u!65 &579899450
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5104,6 +5088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.2
   speed: 2.5
+  soloHorizontal: 0
 --- !u!114 &767182604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7405,7 +7390,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1152474277}
   - component: {fileID: 1152474279}
-  - component: {fileID: 1152474278}
   m_Layer: 0
   m_Name: Seccion inicio trigger
   m_TagString: Untagged
@@ -7428,42 +7412,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 591316205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1152474278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152474276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c783ed73e64a204ebf38b93c054b566, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  convaiNPC: {fileID: 1552119996}
-  selectedTriggerIndex: 0
-  availableTriggers:
-  - Inicio de escena
-  - 90-2000 trigger
-  - Inicio-70 trigger
-  - 2000-2010 trigger
-  - 70-80 trigger
-  - 80-90 trigger
-  onTriggerEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1152474276}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!65 &1152474279
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7483,8 +7431,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 69.23044, y: 3, z: 25.104456}
-  m_Center: {x: 15.58687, y: 0.49565423, z: -5.974639}
+  m_Size: {x: 13.352028, y: 3, z: 9.363535}
+  m_Center: {x: 1.0981634, y: 0.49565423, z: 1.8958206}
 --- !u!1 &1159028023
 GameObject:
   m_ObjectHideFlags: 0
@@ -9499,6 +9447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.2
   speed: 2.5
+  soloHorizontal: 0
 --- !u!114 &1445194654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10755,14 +10704,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1644413205}
   - component: {fileID: 1644413207}
-  - component: {fileID: 1644413206}
   m_Layer: 0
   m_Name: Seccion los 80 trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1644413205
 Transform:
   m_ObjectHideFlags: 0
@@ -10778,42 +10726,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 591316205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1644413206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1644413204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c783ed73e64a204ebf38b93c054b566, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  convaiNPC: {fileID: 1552119996}
-  selectedTriggerIndex: 4
-  availableTriggers:
-  - Inicio de escena
-  - 90-2000 trigger
-  - Inicio-70 trigger
-  - 2000-2010 trigger
-  - 70-80 trigger
-  - 80-90 trigger
-  onTriggerEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1644413204}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!65 &1644413207
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11271,14 +11183,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1781503327}
   - component: {fileID: 1781503329}
-  - component: {fileID: 1781503328}
   m_Layer: 0
   m_Name: Seccion los 2010 trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1781503327
 Transform:
   m_ObjectHideFlags: 0
@@ -11294,42 +11205,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 591316205}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1781503328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1781503326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c783ed73e64a204ebf38b93c054b566, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  convaiNPC: {fileID: 1552119996}
-  selectedTriggerIndex: 3
-  availableTriggers:
-  - Inicio de escena
-  - 90-2000 trigger
-  - Inicio-70 trigger
-  - 2000-2010 trigger
-  - 70-80 trigger
-  - 80-90 trigger
-  onTriggerEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1781503326}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!65 &1781503329
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11509,6 +11384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.2
   speed: 2.5
+  soloHorizontal: 0
 --- !u!114 &1792458207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13032,50 +12908,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1962967739}
   - component: {fileID: 1962967738}
-  - component: {fileID: 1962967737}
   m_Layer: 0
   m_Name: Seccion los 90 trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1962967737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1962967736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c783ed73e64a204ebf38b93c054b566, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  convaiNPC: {fileID: 1552119996}
-  selectedTriggerIndex: 5
-  availableTriggers:
-  - Inicio de escena
-  - 90-2000 trigger
-  - Inicio-70 trigger
-  - 2000-2010 trigger
-  - 70-80 trigger
-  - 80-90 trigger
-  onTriggerEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1962967736}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  m_IsActive: 1
 --- !u!65 &1962967738
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14016,6 +13855,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 0.2
   speed: 2.5
+  soloHorizontal: 0
 --- !u!114 &2046769884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14404,9 +14244,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4272753387560391310, guid: 2a09da1d04f25174da5f37449608e885, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2088058350}
-    - targetCorrespondingSourceObject: {fileID: 4272753387560391310, guid: 2a09da1d04f25174da5f37449608e885, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2088058351}
   m_SourcePrefab: {fileID: 100100000, guid: 2a09da1d04f25174da5f37449608e885, type: 3}
 --- !u!1 &2088058349 stripped
 GameObject:
@@ -14449,7 +14286,7 @@ MonoBehaviour:
     onSectionStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2088058351}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: controladorAsistente, Assembly-CSharp
           m_MethodName: MoveToPosition
           m_Mode: 2
@@ -14468,7 +14305,7 @@ MonoBehaviour:
     onSectionStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2088058351}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: controladorAsistente, Assembly-CSharp
           m_MethodName: MoveToPosition
           m_Mode: 2
@@ -14506,7 +14343,7 @@ MonoBehaviour:
     onSectionStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2088058351}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: controladorAsistente, Assembly-CSharp
           m_MethodName: MoveToPosition
           m_Mode: 2
@@ -14544,7 +14381,7 @@ MonoBehaviour:
     onSectionStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2088058351}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: controladorAsistente, Assembly-CSharp
           m_MethodName: MoveToPosition
           m_Mode: 2
@@ -14615,7 +14452,7 @@ MonoBehaviour:
     onSectionStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2088058351}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: controladorAsistente, Assembly-CSharp
           m_MethodName: MoveToPosition
           m_Mode: 2
@@ -14790,31 +14627,6 @@ MonoBehaviour:
     triggerMessage: "Ha llegado a la secci\xF3n de los a\xF1os 90"
     destinationSection: 66deb2b4-a7dc-11f0-829a-42010a7be025
     characterId: 599ab778-a61b-11f0-ad03-42010a7be025
---- !u!114 &2088058351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088058349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5541e60c302096e409b2f7016f9dfb6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  assistant: {fileID: 0}
-  convaiActionsHandler: {fileID: 0}
-  seccion70s: {fileID: 0}
-  seccion80s: {fileID: 0}
-  seccion90s: {fileID: 0}
-  seccion2000: {fileID: 0}
-  seccion2010: {fileID: 0}
-  activarSeccionConvai: 1
-  seccionID70s: Seccion_70s
-  seccionID80s: Seccion_80s
-  seccionID90s: Seccion_90s
-  seccionID2000: Seccion_2000
-  seccionID2010: Seccion_2010
 --- !u!1 &2097782349
 GameObject:
   m_ObjectHideFlags: 0

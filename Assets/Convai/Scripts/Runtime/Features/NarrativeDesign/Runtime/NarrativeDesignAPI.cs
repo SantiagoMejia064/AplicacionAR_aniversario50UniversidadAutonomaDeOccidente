@@ -18,6 +18,9 @@ namespace Convai.Scripts.Runtime.Features
         private const string BASE_URL = "https://api.convai.com/character/narrative/";
         private readonly HttpClient _httpClient;
 
+        public static object NarrativeDesignManager { get; internal set; }
+
+
         /// <summary>
         ///     Initializes a new instance of the <see cref="NarrativeDesignAPI" /> class.
         /// </summary>
