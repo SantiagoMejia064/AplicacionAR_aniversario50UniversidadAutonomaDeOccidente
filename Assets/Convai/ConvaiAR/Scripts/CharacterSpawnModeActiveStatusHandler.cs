@@ -28,7 +28,7 @@ public class CharacterSpawnModeActiveStatusHandler : MonoBehaviour
     /// </summary>
     private void OnEnable()
     {
-        _convaiCharacterSpawner.OnContentActivated  += ConvaiCharacterSpawner_OnCharacterSpawned;
+        _convaiCharacterSpawner.OnCharacterSpawned += ConvaiCharacterSpawner_OnCharacterSpawned;
     }
 
     /// <summary>
@@ -36,7 +36,7 @@ public class CharacterSpawnModeActiveStatusHandler : MonoBehaviour
     /// </summary>
     private void OnDisable()
     {
-        _convaiCharacterSpawner.OnContentActivated  -= ConvaiCharacterSpawner_OnCharacterSpawned;
+        _convaiCharacterSpawner.OnCharacterSpawned -= ConvaiCharacterSpawner_OnCharacterSpawned;
     }
 
     /// <summary>
@@ -52,7 +52,6 @@ public class CharacterSpawnModeActiveStatusHandler : MonoBehaviour
     /// Toggles the character spawn mode based on the UI toggle value.
     /// </summary>
     /// <param name="value">The value of the UI toggle.</param>
-    
     private void ToggleSpawnMode(bool value)
     {
         _convaiCharacterSpawner.SetSpawnMode(value);
