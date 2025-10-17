@@ -2025,6 +2025,7 @@ Transform:
   - {fileID: 7334573360661247586}
   - {fileID: 3391223666118837410}
   - {fileID: 2989401736141288549}
+  - {fileID: 2222594418388190683}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1361650241379545152
@@ -2288,7 +2289,7 @@ GameObject:
   - component: {fileID: 6287709787299729027}
   m_Layer: 0
   m_Name: Entorno
-  m_TagString: Untagged
+  m_TagString: MainEstructure
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5588,6 +5589,53 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &3790673232373648817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2222594418388190683}
+  - component: {fileID: 4769667778475642364}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2222594418388190683
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3790673232373648817}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8336809892436069380}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4769667778475642364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3790673232373648817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20541431fd20f8b408cc71268c9cce9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  appearSoundEffect: {fileID: 8300000, guid: 6f76dda2c71135e4c8bf0d96003435fa, type: 3}
+  backgroundMusic: {fileID: 8300000, guid: d7bef86a9a750df4aaab270a504bd2ee, type: 3}
+  tagToWatchFor: MainEstructure
 --- !u!1 &3847407637500662012
 GameObject:
   m_ObjectHideFlags: 0
