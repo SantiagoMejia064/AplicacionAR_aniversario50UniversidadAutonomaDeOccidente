@@ -1259,6 +1259,111 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &854438208467619530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2553528038923978933}
+  - component: {fileID: 3712290535895818678}
+  - component: {fileID: 4291797789949306237}
+  - component: {fileID: 5443227407229575786}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2553528038923978933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854438208467619530}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 4.61}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2989401736141288549}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3712290535895818678
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854438208467619530}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &4291797789949306237
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854438208467619530}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5443227407229575786
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854438208467619530}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &942266959091839313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1589,6 +1694,8 @@ GameObject:
   - component: {fileID: 6283761742990600467}
   - component: {fileID: 7744086616579455603}
   - component: {fileID: 545833179738029554}
+  - component: {fileID: 2614988251353264259}
+  - component: {fileID: 6989497040238245990}
   m_Layer: 0
   m_Name: Seccion los 70 Trigger
   m_TagString: Untagged
@@ -1605,8 +1712,8 @@ Transform:
   m_GameObject: {fileID: 1236596288841634146}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.18849555, z: 0, w: 0.982074}
-  m_LocalPosition: {x: 19.84, y: 0, z: -31.77}
-  m_LocalScale: {x: 3, y: 2, z: 3}
+  m_LocalPosition: {x: 19.84, y: 1.5, z: -31.77}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5419599444911913922}
@@ -1641,6 +1748,57 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.427703, y: 1, z: 1.7282648}
   m_Center: {x: 0.8506264, y: 0, z: -0.017468506}
+--- !u!54 &2614988251353264259
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236596288841634146}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &6989497040238245990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236596288841634146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5541e60c302096e409b2f7016f9dfb6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  assistant: {fileID: 6231195668381875364}
+  seccion70s: {fileID: 5419599444911913922}
+  seccion80s: {fileID: 2434070406548977996}
+  seccion90s: {fileID: 510800838680412714}
+  seccion2000: {fileID: 565759558409394217}
+  seccion2010: {fileID: 4650508929285536429}
+  activarSeccionConvai: 1
+  seccionID70s: Seccion_70s
+  seccionID80s: Seccion_80s
+  seccionID90s: Seccion_90s
+  seccionID2000: Seccion_2000
+  seccionID2010: Seccion_2010
 --- !u!1 &1241144521564830895
 GameObject:
   m_ObjectHideFlags: 0
@@ -5647,6 +5805,8 @@ GameObject:
   - component: {fileID: 6508517285344390047}
   - component: {fileID: 6297138323954453009}
   - component: {fileID: 7637461140202472706}
+  - component: {fileID: 4480158197353786131}
+  - component: {fileID: 8568903303283207660}
   m_Layer: 0
   m_Name: Seccion los 80 Trigger
   m_TagString: Untagged
@@ -5663,8 +5823,8 @@ Transform:
   m_GameObject: {fileID: 3847407637500662012}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.18849555, z: 0, w: 0.982074}
-  m_LocalPosition: {x: 19.36, y: 0, z: -38.9}
-  m_LocalScale: {x: 3, y: 2, z: 3}
+  m_LocalPosition: {x: 19.36, y: 1.5, z: -38.9}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2434070406548977996}
@@ -5699,6 +5859,57 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.0199533, y: 1, z: 1.6956657}
   m_Center: {x: 0.65539956, y: 0, z: 0.04514542}
+--- !u!54 &4480158197353786131
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3847407637500662012}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &8568903303283207660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3847407637500662012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5541e60c302096e409b2f7016f9dfb6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  assistant: {fileID: 6231195668381875364}
+  seccion70s: {fileID: 5419599444911913922}
+  seccion80s: {fileID: 2434070406548977996}
+  seccion90s: {fileID: 510800838680412714}
+  seccion2000: {fileID: 565759558409394217}
+  seccion2010: {fileID: 4650508929285536429}
+  activarSeccionConvai: 1
+  seccionID70s: Seccion_70s
+  seccionID80s: Seccion_80s
+  seccionID90s: Seccion_90s
+  seccionID2000: Seccion_2000
+  seccionID2010: Seccion_2010
 --- !u!1 &3934904871467532745
 GameObject:
   m_ObjectHideFlags: 0
@@ -8038,6 +8249,8 @@ GameObject:
   - component: {fileID: 2105870454139976439}
   - component: {fileID: 2243640391764138356}
   - component: {fileID: 6577832217678166353}
+  - component: {fileID: 3747121717543395954}
+  - component: {fileID: 2255151878732675944}
   m_Layer: 0
   m_Name: Seccion los 90 Trigger
   m_TagString: Untagged
@@ -8054,8 +8267,8 @@ Transform:
   m_GameObject: {fileID: 5369397678420704946}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.28986716, z: 0, w: 0.9570669}
-  m_LocalPosition: {x: 13.28, y: 0, z: -35.94}
-  m_LocalScale: {x: 3, y: 2, z: 3}
+  m_LocalPosition: {x: 13.28, y: 1.5, z: -35.94}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 510800838680412714}
@@ -8090,6 +8303,57 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.195486, y: 1, z: 1.5043468}
   m_Center: {x: -0.7431647, y: 0, z: -0.05051191}
+--- !u!54 &3747121717543395954
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5369397678420704946}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &2255151878732675944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5369397678420704946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5541e60c302096e409b2f7016f9dfb6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  assistant: {fileID: 6231195668381875364}
+  seccion70s: {fileID: 5419599444911913922}
+  seccion80s: {fileID: 2434070406548977996}
+  seccion90s: {fileID: 510800838680412714}
+  seccion2000: {fileID: 565759558409394217}
+  seccion2010: {fileID: 4650508929285536429}
+  activarSeccionConvai: 1
+  seccionID70s: Seccion_70s
+  seccionID80s: Seccion_80s
+  seccionID90s: Seccion_90s
+  seccionID2000: Seccion_2000
+  seccionID2010: Seccion_2010
 --- !u!1 &5491292915507329470
 GameObject:
   m_ObjectHideFlags: 0
@@ -9518,6 +9782,8 @@ GameObject:
   - component: {fileID: 6722220723380612337}
   - component: {fileID: 498674567814867871}
   - component: {fileID: 1578260646479774875}
+  - component: {fileID: 7754229874228670735}
+  - component: {fileID: 8885662004808033210}
   m_Layer: 0
   m_Name: Seccion los 2010 Trigger
   m_TagString: Untagged
@@ -9534,8 +9800,8 @@ Transform:
   m_GameObject: {fileID: 6400202102689319592}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.28986716, z: 0, w: 0.9570669}
-  m_LocalPosition: {x: 10.02, y: 0, z: -26.72}
-  m_LocalScale: {x: 3, y: 2, z: 3}
+  m_LocalPosition: {x: 10.02, y: 1.5, z: -26.72}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4650508929285536429}
@@ -9570,6 +9836,57 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.196552, y: 1, z: 1.2783644}
   m_Center: {x: -0.7323728, y: 0, z: 0.0075211977}
+--- !u!54 &7754229874228670735
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6400202102689319592}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &8885662004808033210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6400202102689319592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5541e60c302096e409b2f7016f9dfb6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  assistant: {fileID: 6231195668381875364}
+  seccion70s: {fileID: 5419599444911913922}
+  seccion80s: {fileID: 2434070406548977996}
+  seccion90s: {fileID: 510800838680412714}
+  seccion2000: {fileID: 565759558409394217}
+  seccion2010: {fileID: 4650508929285536429}
+  activarSeccionConvai: 1
+  seccionID70s: Seccion_70s
+  seccionID80s: Seccion_80s
+  seccionID90s: Seccion_90s
+  seccionID2000: Seccion_2000
+  seccionID2010: Seccion_2010
 --- !u!1 &6418341705197960060
 GameObject:
   m_ObjectHideFlags: 0
@@ -10112,6 +10429,8 @@ GameObject:
   - component: {fileID: 534195733305808731}
   - component: {fileID: 92701518525814794}
   - component: {fileID: 8088235518738279434}
+  - component: {fileID: 5442620568454840293}
+  - component: {fileID: 961852324524109034}
   m_Layer: 0
   m_Name: Seccion Inicio Trigger
   m_TagString: Untagged
@@ -10128,8 +10447,8 @@ Transform:
   m_GameObject: {fileID: 6689579684712118297}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2.28}
-  m_LocalScale: {x: 3, y: 2, z: 3}
+  m_LocalPosition: {x: 14.89, y: 1.5, z: -5.66}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6287709787299729027}
@@ -10163,6 +10482,57 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.1259122, y: 1, z: 1.7639402}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &5442620568454840293
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6689579684712118297}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &961852324524109034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6689579684712118297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5541e60c302096e409b2f7016f9dfb6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  assistant: {fileID: 6231195668381875364}
+  seccion70s: {fileID: 5419599444911913922}
+  seccion80s: {fileID: 2434070406548977996}
+  seccion90s: {fileID: 510800838680412714}
+  seccion2000: {fileID: 565759558409394217}
+  seccion2010: {fileID: 4650508929285536429}
+  activarSeccionConvai: 1
+  seccionID70s: Seccion_70s
+  seccionID80s: Seccion_80s
+  seccionID90s: Seccion_90s
+  seccionID2000: Seccion_2000
+  seccionID2010: Seccion_2010
 --- !u!1 &6735035781272553908
 GameObject:
   m_ObjectHideFlags: 0
@@ -10180,7 +10550,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2989401736141288549
 Transform:
   m_ObjectHideFlags: 0
@@ -10193,7 +10563,8 @@ Transform:
   m_LocalPosition: {x: -0.44502738, y: -0.27836114, z: 1.6759034}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2553528038923978933}
   m_Father: {fileID: 8336809892436069380}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &4399469232436966793
@@ -11005,6 +11376,8 @@ GameObject:
   - component: {fileID: 5266220372195803484}
   - component: {fileID: 5910230330714116605}
   - component: {fileID: 7601748837727574232}
+  - component: {fileID: 280662181466449048}
+  - component: {fileID: 6215418724625592271}
   m_Layer: 0
   m_Name: Seccion los 2000 Trigger
   m_TagString: Untagged
@@ -11021,8 +11394,8 @@ Transform:
   m_GameObject: {fileID: 7069016020205468072}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.28986716, z: 0, w: 0.9570669}
-  m_LocalPosition: {x: 11.85, y: 0, z: -31.3}
-  m_LocalScale: {x: 3, y: 2, z: 3}
+  m_LocalPosition: {x: 11.85, y: 1.5, z: -31.3}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 565759558409394217}
@@ -11057,6 +11430,57 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.2862926, y: 1, z: 1.2408088}
   m_Center: {x: -0.7183775, y: 0, z: 0.088310145}
+--- !u!54 &280662181466449048
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7069016020205468072}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &6215418724625592271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7069016020205468072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5541e60c302096e409b2f7016f9dfb6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  assistant: {fileID: 6231195668381875364}
+  seccion70s: {fileID: 5419599444911913922}
+  seccion80s: {fileID: 2434070406548977996}
+  seccion90s: {fileID: 510800838680412714}
+  seccion2000: {fileID: 565759558409394217}
+  seccion2010: {fileID: 4650508929285536429}
+  activarSeccionConvai: 1
+  seccionID70s: Seccion_70s
+  seccionID80s: Seccion_80s
+  seccionID90s: Seccion_90s
+  seccionID2000: Seccion_2000
+  seccionID2010: Seccion_2010
 --- !u!1 &7157952599743684948
 GameObject:
   m_ObjectHideFlags: 0
@@ -14378,7 +14802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4272753387560391310, guid: 2a09da1d04f25174da5f37449608e885, type: 3}
       propertyPath: m_Name
-      value: Convai NPC Amelia
+      value: Convai NPC LAURA
       objectReference: {fileID: 0}
     - target: {fileID: 5337071915198598774, guid: 2a09da1d04f25174da5f37449608e885, type: 3}
       propertyPath: m_Materials.Array.data[0]
