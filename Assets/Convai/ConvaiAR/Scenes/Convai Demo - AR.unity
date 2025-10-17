@@ -4788,61 +4788,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661820712}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &691521629 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3896799240166172756, guid: 418912954873d2341958d83aa22c2e8d, type: 3}
-  m_PrefabInstance: {fileID: 2123338713}
-  m_PrefabAsset: {fileID: 0}
---- !u!136 &691521636
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 691521629}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.3
-  m_Height: 1.8
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &691521637
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 691521629}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &700810996
 GameObject:
   m_ObjectHideFlags: 0
@@ -15322,10 +15267,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3896799240166172756, guid: 418912954873d2341958d83aa22c2e8d, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 4457854627405288874, guid: 418912954873d2341958d83aa22c2e8d, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -15437,12 +15378,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7632982925494829318, guid: 418912954873d2341958d83aa22c2e8d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2096271515}
-    - targetCorrespondingSourceObject: {fileID: 3896799240166172756, guid: 418912954873d2341958d83aa22c2e8d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 691521636}
-    - targetCorrespondingSourceObject: {fileID: 3896799240166172756, guid: 418912954873d2341958d83aa22c2e8d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 691521637}
   m_SourcePrefab: {fileID: 100100000, guid: 418912954873d2341958d83aa22c2e8d, type: 3}
 --- !u!1 &2123338714 stripped
 GameObject:
