@@ -1788,14 +1788,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assistant: {fileID: 4335554067901853344}
-  assistantTag: Assistant
-  findRetrySeconds: 0.5
-  findMaxTries: 30
   seccion70s: {fileID: 5419599444911913922}
   seccion80s: {fileID: 2434070406548977996}
   seccion90s: {fileID: 510800838680412714}
   seccion2000: {fileID: 565759558409394217}
   seccion2010: {fileID: 4650508929285536429}
+  activarSeccionConvai: 1
+  seccionID70s: Seccion_70s
+  seccionID80s: Seccion_80s
+  seccionID90s: Seccion_90s
+  seccionID2000: Seccion_2000
+  seccionID2010: Seccion_2010
 --- !u!1 &1241144521564830895
 GameObject:
   m_ObjectHideFlags: 0
@@ -5896,14 +5899,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assistant: {fileID: 4335554067901853344}
-  assistantTag: Assistant
-  findRetrySeconds: 0.5
-  findMaxTries: 30
   seccion70s: {fileID: 5419599444911913922}
   seccion80s: {fileID: 2434070406548977996}
   seccion90s: {fileID: 510800838680412714}
   seccion2000: {fileID: 565759558409394217}
   seccion2010: {fileID: 4650508929285536429}
+  activarSeccionConvai: 1
+  seccionID70s: Seccion_70s
+  seccionID80s: Seccion_80s
+  seccionID90s: Seccion_90s
+  seccionID2000: Seccion_2000
+  seccionID2010: Seccion_2010
 --- !u!1 &3934904871467532745
 GameObject:
   m_ObjectHideFlags: 0
@@ -8337,14 +8343,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assistant: {fileID: 4335554067901853344}
-  assistantTag: Assistant
-  findRetrySeconds: 0.5
-  findMaxTries: 30
   seccion70s: {fileID: 5419599444911913922}
   seccion80s: {fileID: 2434070406548977996}
   seccion90s: {fileID: 510800838680412714}
   seccion2000: {fileID: 565759558409394217}
   seccion2010: {fileID: 4650508929285536429}
+  activarSeccionConvai: 1
+  seccionID70s: Seccion_70s
+  seccionID80s: Seccion_80s
+  seccionID90s: Seccion_90s
+  seccionID2000: Seccion_2000
+  seccionID2010: Seccion_2010
 --- !u!1 &5491292915507329470
 GameObject:
   m_ObjectHideFlags: 0
@@ -9867,14 +9876,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assistant: {fileID: 4335554067901853344}
-  assistantTag: Assistant
-  findRetrySeconds: 0.5
-  findMaxTries: 30
   seccion70s: {fileID: 5419599444911913922}
   seccion80s: {fileID: 2434070406548977996}
   seccion90s: {fileID: 510800838680412714}
   seccion2000: {fileID: 565759558409394217}
   seccion2010: {fileID: 4650508929285536429}
+  activarSeccionConvai: 1
+  seccionID70s: Seccion_70s
+  seccionID80s: Seccion_80s
+  seccionID90s: Seccion_90s
+  seccionID2000: Seccion_2000
+  seccionID2010: Seccion_2010
 --- !u!1 &6418341705197960060
 GameObject:
   m_ObjectHideFlags: 0
@@ -10510,14 +10522,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assistant: {fileID: 4335554067901853344}
-  assistantTag: Assistant
-  findRetrySeconds: 0.5
-  findMaxTries: 30
   seccion70s: {fileID: 5419599444911913922}
   seccion80s: {fileID: 2434070406548977996}
   seccion90s: {fileID: 510800838680412714}
   seccion2000: {fileID: 565759558409394217}
   seccion2010: {fileID: 4650508929285536429}
+  activarSeccionConvai: 1
+  seccionID70s: Seccion_70s
+  seccionID80s: Seccion_80s
+  seccionID90s: Seccion_90s
+  seccionID2000: Seccion_2000
+  seccionID2010: Seccion_2010
 --- !u!1 &6735035781272553908
 GameObject:
   m_ObjectHideFlags: 0
@@ -11455,14 +11470,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assistant: {fileID: 4335554067901853344}
-  assistantTag: Assistant
-  findRetrySeconds: 0.5
-  findMaxTries: 30
   seccion70s: {fileID: 5419599444911913922}
   seccion80s: {fileID: 2434070406548977996}
   seccion90s: {fileID: 510800838680412714}
   seccion2000: {fileID: 565759558409394217}
   seccion2010: {fileID: 4650508929285536429}
+  activarSeccionConvai: 1
+  seccionID70s: Seccion_70s
+  seccionID80s: Seccion_80s
+  seccionID90s: Seccion_90s
+  seccionID2000: Seccion_2000
+  seccionID2010: Seccion_2010
 --- !u!1 &7157952599743684948
 GameObject:
   m_ObjectHideFlags: 0
@@ -14785,10 +14803,6 @@ PrefabInstance:
     - target: {fileID: 4272753387560391310, guid: 2a09da1d04f25174da5f37449608e885, type: 3}
       propertyPath: m_Name
       value: Convai NPC LAURA
-      objectReference: {fileID: 0}
-    - target: {fileID: 4272753387560391310, guid: 2a09da1d04f25174da5f37449608e885, type: 3}
-      propertyPath: m_TagString
-      value: Assistant
       objectReference: {fileID: 0}
     - target: {fileID: 5337071915198598774, guid: 2a09da1d04f25174da5f37449608e885, type: 3}
       propertyPath: m_Materials.Array.data[0]

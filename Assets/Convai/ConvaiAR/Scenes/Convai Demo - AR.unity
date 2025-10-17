@@ -294,10 +294,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Convai Essentials - AR
       objectReference: {fileID: 0}
-    - target: {fileID: 6423308329773244282, guid: 418912954873d2341958d83aa22c2e8d, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 7263990075928856712, guid: 418912954873d2341958d83aa22c2e8d, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.9

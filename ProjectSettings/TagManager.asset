@@ -6,8 +6,6 @@ TagManager:
   tags:
   - Character
   - MainEstructure
-  - SenderTMP
-  - Assistant
   layers:
   - Default
   - TransparentFX
