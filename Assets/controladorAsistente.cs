@@ -33,23 +33,18 @@ public class ControladorAsistente : MonoBehaviour
         {
             case "Seccion los 70 Trigger":
                 TeletransportarAsistente(seccion70s, seccionID70s);
-                Debug.Log("Asistente movido a la sección de los 70s");
                 break;
             case "Seccion los 80 Trigger":
                 TeletransportarAsistente(seccion80s, seccionID80s);
-                Debug.Log("Asistente movido a la sección de los 80s");
                 break;
             case "Seccion los 90 Trigger":
                 TeletransportarAsistente(seccion90s, seccionID90s);
-                Debug.Log("Asistente movido a la sección de los 90s");
                 break;
             case "Seccion los 2000 Trigger":
                 TeletransportarAsistente(seccion2000, seccionID2000);
-                Debug.Log("Asistente movido a la sección de los 2000s");
                 break;
             case "Seccion los 2010 Trigger":
                 TeletransportarAsistente(seccion2010, seccionID2010);
-                Debug.Log("Asistente movido a la sección de los 2010s");
                 break;
             default:
                 Debug.LogWarning("Trigger no reconocido: " + gameObject.name);
