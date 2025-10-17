@@ -1,9 +1,13 @@
 using UnityEngine;
+using System.Collections;
 
 public class ControladorAsistente : MonoBehaviour
 {
-    [Header("Asistente Convai")]
-    [SerializeField] private GameObject assistant; // Tu modelo 3D del asistente
+    [Header("Asistente Convai (si se instancia en runtime lo busco por Tag)")]
+    [SerializeField] private GameObject assistant;     // si está vacío, lo busco
+    [SerializeField] private string assistantTag = "Assistant";
+    [SerializeField] private float findRetrySeconds = 0.5f;
+    [SerializeField] private int findMaxTries = 30;    // 15s máx buscando
 
     [Header("Targets de las secciones")]
     [SerializeField] private Transform seccion70s;
@@ -12,64 +16,95 @@ public class ControladorAsistente : MonoBehaviour
     [SerializeField] private Transform seccion2000;
     [SerializeField] private Transform seccion2010;
 
-    [Header("Opciones Convai")]
-    [SerializeField] private bool activarSeccionConvai = true;
-    [SerializeField] private string seccionID70s = "Seccion_70s";
-    [SerializeField] private string seccionID80s = "Seccion_80s";
-    [SerializeField] private string seccionID90s = "Seccion_90s";
-    [SerializeField] private string seccionID2000 = "Seccion_2000";
-    [SerializeField] private string seccionID2010 = "Seccion_2010";
+    private Transform assistantT;
+    private bool _searching;
+
+    private void OnEnable()
+    {
+        // cache si ya está asignado en el inspector
+        if (assistant != null) assistantT = assistant.transform;
+
+        // si no hay referencia, intento encontrarlo
+        if (assistantT == null && !_searching)
+            StartCoroutine(TryFindAssistantRoutine());
+    }
+
+    private IEnumerator TryFindAssistantRoutine()
+    {
+        _searching = true;
+        for (int i = 0; i < findMaxTries && assistantT == null; i++)
+        {
+            var go = GameObject.FindGameObjectWithTag(assistantTag);
+            if (go != null)
+            {
+                assistant = go;
+                assistantT = go.transform;
+                Debug.Log("[ControladorAsistente] Asistente encontrado por Tag: " + assistantTag);
+                break;
+            }
+            yield return new WaitForSeconds(findRetrySeconds);
+        }
+        if (assistantT == null)
+            Debug.LogWarning("[ControladorAsistente] No encontré al asistente (tag: " + assistantTag + "). ¿El spawner ya lo instanció?");
+        _searching = false;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
         // Solo si quien entra es la cámara / jugador
         if (!other.CompareTag("Player")) return;
 
-        // DEBUG: confirmar colisión
-        //Debug.Log("Trigger detectado en: " + gameObject.name + " por: " + other.name);
+        // Si aún no se encontró el asistente, aviso y salgo
+        if (assistantT == null)
+        {
+            Debug.LogWarning("[ControladorAsistente] Trigger " + name + " activado, pero el asistente aún no existe.");
+            return;
+        }
 
-        // Dependiendo del trigger, mover el asistente
         switch (gameObject.name)
         {
             case "Seccion los 70 Trigger":
-                TeletransportarAsistente(seccion70s, seccionID70s);
+                TeletransportarAsistente(seccion70s);
                 Debug.Log("Asistente movido a la sección de los 70s");
                 break;
+
             case "Seccion los 80 Trigger":
-                TeletransportarAsistente(seccion80s, seccionID80s);
+                TeletransportarAsistente(seccion80s);
                 Debug.Log("Asistente movido a la sección de los 80s");
                 break;
+
             case "Seccion los 90 Trigger":
-                TeletransportarAsistente(seccion90s, seccionID90s);
+                TeletransportarAsistente(seccion90s);
                 Debug.Log("Asistente movido a la sección de los 90s");
                 break;
+
             case "Seccion los 2000 Trigger":
-                TeletransportarAsistente(seccion2000, seccionID2000);
+                TeletransportarAsistente(seccion2000);
                 Debug.Log("Asistente movido a la sección de los 2000s");
                 break;
+
             case "Seccion los 2010 Trigger":
-                TeletransportarAsistente(seccion2010, seccionID2010);
+                TeletransportarAsistente(seccion2010);
                 Debug.Log("Asistente movido a la sección de los 2010s");
                 break;
+
             default:
                 Debug.LogWarning("Trigger no reconocido: " + gameObject.name);
                 break;
         }
     }
 
-    private void TeletransportarAsistente(Transform target, string seccionID = "")
+    private void TeletransportarAsistente(Transform target)
     {
-        if (assistant == null || target == null)
+        if (assistantT == null || target == null)
         {
-            Debug.LogError("Assistant o Target son null");
+            Debug.LogError("Assistant o Target son null en " + name);
             return;
         }
 
-        // Teletransportar
-        assistant.transform.position = target.position;
-        assistant.transform.rotation = target.rotation;
+        assistantT.position = target.position;
+        assistantT.rotation = target.rotation;
 
         Debug.Log("Asistente movido a: " + target.position);
-
     }
 }
