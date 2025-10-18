@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FunciónQuiz : MonoBehaviour
+public class FuncionQuiz : MonoBehaviour
 {
     [Header("Botones de esta pregunta")]
     public Button[] optionButtons;
@@ -12,7 +12,7 @@ public class FunciónQuiz : MonoBehaviour
     [Header("Flujo de paneles")]
     public GameObject panelActual;        // Este panel (pregunta actual)
     public GameObject panelSiguiente;     // Solo para la primera pregunta
-    public bool esUltimaPregunta = false; // Marca true en la segunda pregunta
+    public bool esUltimaPregunta = false; // Marca true en la última pregunta
 
     private bool yaRespondido = false;
 
@@ -30,8 +30,10 @@ public class FunciónQuiz : MonoBehaviour
         if (yaRespondido) return;
         yaRespondido = true;
 
+        bool isCorrect = (index == correctIndex); // ✅ Aquí definimos si fue correcta
+
         // Pinta la respuesta
-        if (index == correctIndex)
+        if (isCorrect)
             optionButtons[index].image.color = Color.green;
         else
         {
@@ -43,6 +45,9 @@ public class FunciónQuiz : MonoBehaviour
         foreach (var b in optionButtons)
             b.interactable = false;
 
+        // ✅ Reporta al contador global
+        PuntajeManager.ReportAnswer(isCorrect);
+
         // Espera un poco y cambia de panel o cierra
         Invoke(nameof(AvanzarFlujo), 0.8f);
     }
@@ -51,12 +56,10 @@ public class FunciónQuiz : MonoBehaviour
     {
         if (esUltimaPregunta)
         {
-            // Si es la última, desactiva todo
             panelActual.SetActive(false);
         }
         else
         {
-            // Si no, pasa al siguiente panel
             panelActual.SetActive(false);
             panelSiguiente.SetActive(true);
         }
