@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    [Header("Configuración de Sonidos")]
-    // Arrastra aquí el sonido corto de aparición
+    [Header("Configuraciï¿½n de Sonidos")]
+    // Arrastra aquï¿½ el sonido corto de apariciï¿½n
     public AudioClip appearSoundEffect;
-    // Arrastra aquí la música de fondo
-    public AudioClip backgroundMusic;
+    // Arrastra aquï¿½ la mï¿½sica de fondo
+    //public AudioClip backgroundMusic;
 
     [Header("Etiqueta a Vigilar")]
     // Escribe la etiqueta del objeto que esperaremos
@@ -16,25 +16,25 @@ public class AudioManager : MonoBehaviour
 
     // Componentes de Audio
     private AudioSource soundEffectSource;
-    private AudioSource backgroundMusicSource;
+    public AudioSource backgroundMusicSource;
 
     // Control para que solo suene una vez
     private bool soundsHavePlayed = false;
 
     void Start()
     {
-        // Añadimos y configuramos los dos AudioSources necesarios
+        // Aï¿½adimos y configuramos los dos AudioSources necesarios
         soundEffectSource = gameObject.AddComponent<AudioSource>();
-        backgroundMusicSource = gameObject.AddComponent<AudioSource>();
+        //backgroundMusicSource = gameObject.AddComponent<AudioSource>();
 
-        // Configura la música de fondo para que sea en bucle
+        // Configura la mï¿½sica de fondo para que sea en bucle
         backgroundMusicSource.loop = true;
-        backgroundMusicSource.clip = backgroundMusic;
+        //backgroundMusicSource.clip = backgroundMusic;
     }
 
     void Update()
     {
-        // Si los sonidos ya sonaron, no hagas nada más.
+        // Si los sonidos ya sonaron, no hagas nada mï¿½s.
         if (soundsHavePlayed)
         {
             return;
@@ -46,15 +46,15 @@ public class AudioManager : MonoBehaviour
         // Si el objeto fue encontrado...
         if (targetObject != null)
         {
-            Debug.Log("¡Objeto encontrado! Reproduciendo sonidos.");
+            Debug.Log("ï¿½Objeto encontrado! Reproduciendo sonidos.");
 
-            // 1. Reproduce el sonido de aparición una vez
+            // 1. Reproduce el sonido de apariciï¿½n una vez
             if (appearSoundEffect != null)
             {
                 soundEffectSource.PlayOneShot(appearSoundEffect);
             }
 
-            // 2. Inicia la música de fondo
+            // 2. Inicia la mï¿½sica de fondo
             if (backgroundMusicSource != null && !backgroundMusicSource.isPlaying)
             {
                 backgroundMusicSource.Play();
