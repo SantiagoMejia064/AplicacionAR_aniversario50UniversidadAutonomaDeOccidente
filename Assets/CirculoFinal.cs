@@ -7,7 +7,7 @@ using TMPro;
 
 public class CirculoFinal : MonoBehaviour
 {
-    [SerializeField] string cameraTag = "Player"; 
+    [SerializeField] string cameraTag = "MainCamera"; 
     [SerializeField] GameObject panelResultado; 
     [SerializeField] TMP_Text textoResumen;     
     [SerializeField] int totalPreguntas = 10;   
@@ -33,7 +33,7 @@ public class CirculoFinal : MonoBehaviour
         fired = true;
 
         if (textoResumen)
-            textoResumen.text = $"Correctas: {PuntajeManager.TotalCorrectas} / {totalPreguntas}";
+            textoResumen.text = $"Felicidades, tienes {PuntajeManager.TotalCorrectas} / {totalPreguntas} correctas, eres todo un Autónomo";
 
         if (panelResultado)
         {

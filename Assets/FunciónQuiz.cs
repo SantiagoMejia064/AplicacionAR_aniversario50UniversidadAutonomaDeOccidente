@@ -52,7 +52,7 @@ public class FuncionQuiz : MonoBehaviour
         Invoke(nameof(AvanzarFlujo), 0.8f);
     }
 
-    void AvanzarFlujo()
+    public void AvanzarFlujo()
     {
         if (esUltimaPregunta)
         {
