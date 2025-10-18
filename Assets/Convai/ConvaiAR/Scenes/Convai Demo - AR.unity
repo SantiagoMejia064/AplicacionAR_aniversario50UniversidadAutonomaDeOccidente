@@ -4540,7 +4540,6 @@ GameObject:
   - component: {fileID: 643926387}
   - component: {fileID: 643926386}
   - component: {fileID: 643926389}
-  - component: {fileID: 643926390}
   m_Layer: 0
   m_Name: Preguntas 1970
   m_TagString: Untagged
@@ -4645,21 +4644,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &643926390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643926384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aad1173d69c23d4797fc4d710577fbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amplitude: 0.1
-  speed: 1
-  soloHorizontal: 0
 --- !u!1 &662938245
 GameObject:
   m_ObjectHideFlags: 0
@@ -6503,7 +6487,6 @@ GameObject:
   - component: {fileID: 909548538}
   - component: {fileID: 909548537}
   - component: {fileID: 909548536}
-  - component: {fileID: 909548540}
   m_Layer: 0
   m_Name: Preguntas 2010
   m_TagString: Untagged
@@ -6608,21 +6591,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.77497023, y: 0.6749454, z: 0.8208641}
   m_Center: {x: -7.5026693, y: 0.27298045, z: -0.76856655}
---- !u!114 &909548540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 909548534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aad1173d69c23d4797fc4d710577fbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amplitude: 0.1
-  speed: 1
-  soloHorizontal: 0
 --- !u!1 &915077724
 GameObject:
   m_ObjectHideFlags: 0
@@ -9084,7 +9052,6 @@ GameObject:
   - component: {fileID: 1190387787}
   - component: {fileID: 1190387786}
   - component: {fileID: 1190387785}
-  - component: {fileID: 1190387789}
   m_Layer: 0
   m_Name: Preguntas 1980
   m_TagString: Untagged
@@ -9189,21 +9156,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.77497023, y: 0.6749454, z: 0.8208641}
   m_Center: {x: -7.5026693, y: 0.27298045, z: -0.76856655}
---- !u!114 &1190387789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1190387783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aad1173d69c23d4797fc4d710577fbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amplitude: 0.1
-  speed: 1
-  soloHorizontal: 0
 --- !u!1 &1220909428
 GameObject:
   m_ObjectHideFlags: 0
@@ -11316,7 +11268,6 @@ GameObject:
   - component: {fileID: 1580050926}
   - component: {fileID: 1580050925}
   - component: {fileID: 1580050924}
-  - component: {fileID: 1580050928}
   m_Layer: 0
   m_Name: Preguntas 1990
   m_TagString: Untagged
@@ -11421,21 +11372,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.77497023, y: 0.6749454, z: 0.8208641}
   m_Center: {x: -7.5026693, y: 0.27298045, z: -0.76856655}
---- !u!114 &1580050928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1580050922}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aad1173d69c23d4797fc4d710577fbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amplitude: 0.1
-  speed: 1
-  soloHorizontal: 0
 --- !u!1 &1619418273
 GameObject:
   m_ObjectHideFlags: 0
@@ -11927,7 +11863,6 @@ GameObject:
   - component: {fileID: 1700211057}
   - component: {fileID: 1700211056}
   - component: {fileID: 1700211055}
-  - component: {fileID: 1700211059}
   m_Layer: 0
   m_Name: Preguntas 2000
   m_TagString: Untagged
@@ -12032,21 +11967,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.77497023, y: 0.6749454, z: 0.8208641}
   m_Center: {x: -7.5026693, y: 0.27298045, z: -0.76856655}
---- !u!114 &1700211059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1700211053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aad1173d69c23d4797fc4d710577fbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  amplitude: 0.1
-  speed: 1
-  soloHorizontal: 0
 --- !u!1 &1732044570
 GameObject:
   m_ObjectHideFlags: 0
@@ -13115,7 +13035,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1917205045
 Transform:
   m_ObjectHideFlags: 0
