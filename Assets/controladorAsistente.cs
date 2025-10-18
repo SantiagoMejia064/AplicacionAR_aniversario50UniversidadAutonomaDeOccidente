@@ -23,7 +23,7 @@ public class ControladorAsistente : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // Solo si quien entra es la cámara / jugador
-        if (!other.CompareTag("Player")) return;
+        if (!other.CompareTag("MainCamera")) return;
 
         // DEBUG: confirmar colisión
         //Debug.Log("Trigger detectado en: " + gameObject.name + " por: " + other.name);
