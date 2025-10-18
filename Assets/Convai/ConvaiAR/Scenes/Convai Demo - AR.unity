@@ -1666,7 +1666,7 @@ CapsuleCollider:
   m_Radius: 0.3
   m_Height: 1.7
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -0.85, z: 0}
 --- !u!1 &381064448
 GameObject:
   m_ObjectHideFlags: 0
@@ -3458,6 +3458,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2249412941961317197, guid: 72cdee54fbe84d54087e34c843fcc591, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2249412941961317197, guid: 72cdee54fbe84d54087e34c843fcc591, type: 3}
       propertyPath: m_LocalPosition.z
       value: 7.22
       objectReference: {fileID: 0}
@@ -3491,15 +3495,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3990518954282611738, guid: 72cdee54fbe84d54087e34c843fcc591, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.7
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3990518954282611738, guid: 72cdee54fbe84d54087e34c843fcc591, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.7
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3990518954282611738, guid: 72cdee54fbe84d54087e34c843fcc591, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.7
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 3990518954282611738, guid: 72cdee54fbe84d54087e34c843fcc591, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -3515,6 +3519,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5266220372195803484, guid: 72cdee54fbe84d54087e34c843fcc591, type: 3}
       propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5316444373535941640, guid: 72cdee54fbe84d54087e34c843fcc591, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6215418724625592271, guid: 72cdee54fbe84d54087e34c843fcc591, type: 3}
@@ -3781,7 +3789,7 @@ Transform:
   m_GameObject: {fileID: 643926384}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.1833062, z: -0, w: 0.9830559}
-  m_LocalPosition: {x: -12.303016, y: -1.1648982, z: 7.824463}
+  m_LocalPosition: {x: -0.23, y: -1.1648982, z: 5.23}
   m_LocalScale: {x: 1.5922, y: 1.5922, z: 1.5922}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3802,7 +3810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelPreguntas: {fileID: 1958844980}
-  playerTag: Player
+  playerTag: MainCamera
 --- !u!114 &643926387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11639,6 +11647,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3049804712664402120, guid: 418912954873d2341958d83aa22c2e8d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.6
+      objectReference: {fileID: 0}
     - target: {fileID: 3896799240166172756, guid: 418912954873d2341958d83aa22c2e8d, type: 3}
       propertyPath: m_TagString
       value: MainCamera
