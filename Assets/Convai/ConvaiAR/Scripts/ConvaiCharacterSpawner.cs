@@ -15,6 +15,9 @@ public class ConvaiCharacterSpawner : MonoBehaviour
     // Prefab for the Convai character
     [SerializeField] private GameObject _characterPrefab;
 
+    // Reference to the content root (empty GameObject that you want to activate later)
+    [SerializeField] private GameObject _additionalContentRoot; // GameObject that will hold your models and scene elements
+
     private ARRaycastManager _arRaycastManager;
     private ARPlaneManager _arPlaneManager;
     private ARTrackedImageManager _arTrackedImageManager;
@@ -61,7 +64,6 @@ public class ConvaiCharacterSpawner : MonoBehaviour
     /// <summary>
     /// Handles touch screen events to place characters on planes.
     /// </summary>
-    /// <param name="finger">Information about the touch input.</param>
     private void ConvaiInputManager_OnTouchScreen(Finger finger)
     {
         if (IsPointerOverUIObject(finger)) return;
@@ -73,7 +75,6 @@ public class ConvaiCharacterSpawner : MonoBehaviour
     /// <summary>
     /// Handles tracked image changes, spawning characters on added images.
     /// </summary>
-    /// <param name="eventArgs">Event arguments containing information about tracked image changes.</param>
     private void ARTrackedImageManager_TrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
     {
         foreach (var trackedImage in eventArgs.added)
@@ -97,7 +98,6 @@ public class ConvaiCharacterSpawner : MonoBehaviour
     /// <summary>
     /// Tries to place a character on a detected AR plane at the specified screen position.
     /// </summary>
-    /// <param name="touchPosition">The screen position of the touch input.</param>
     private void TryPlaceCharacterOnPlane(Vector2 touchPosition)
     {
         List<ARRaycastHit> _results = new List<ARRaycastHit>();
@@ -105,6 +105,9 @@ public class ConvaiCharacterSpawner : MonoBehaviour
         {
             GameObject character = SpawnCharacter();
             character.transform.position = _results[0].pose.position;
+
+            // Activating additional content (your empty GameObject that holds the models)
+            ActivateAdditionalContent(); // New line added
             Debug.Log("<color=green> Character Spawned! </color>");
         }
         else
@@ -116,10 +119,10 @@ public class ConvaiCharacterSpawner : MonoBehaviour
     /// <summary>
     /// Spawns a character and updates related counters and flags.
     /// </summary>
-    /// <returns>The spawned character GameObject.</returns>
     private GameObject SpawnCharacter()
     {
         if (_isMaxCharacterCountReached) return null;
+
         GameObject character = Instantiate(_characterPrefab);
         _spawnedCharacterCount++;
         if (_spawnedCharacterCount == MAX_CHARACTER_COUNT)
@@ -129,27 +132,37 @@ public class ConvaiCharacterSpawner : MonoBehaviour
         }
 
         OnCharacterSpawned?.Invoke();
-
         return character;
+    }
+
+    /// <summary>
+    /// Activates the additional content (empty GameObject that contains the models).
+    /// </summary>
+    private void ActivateAdditionalContent()
+    {
+        if (_additionalContentRoot != null)
+        {
+            _additionalContentRoot.SetActive(true); // Activates your empty GameObject with models
+            Debug.Log("[ActivateAdditionalContent] Additional content activated.");
+        }
+        else
+        {
+            Debug.LogWarning("[ActivateAdditionalContent] _additionalContentRoot is not assigned!");
+        }
     }
 
     /// <summary>
     /// Toggles the AR Plane Manager to activate or deactivate AR planes.
     /// </summary>
-    /// <param name="value">The value indicating whether to activate or deactivate AR planes.</param>
     private void TogglePlaneManager(bool value)
     {
-        // Deactivate/Activate All Existing Planes.
         _arPlaneManager.SetTrackablesActive(value);
-
-        // Disable/Activate the AR Plane Manager.
         _arPlaneManager.enabled = value;
     }
 
     /// <summary>
     /// Sets the spawn mode, enabling or disabling character spawning.
     /// </summary>
-    /// <param name="value">The value indicating whether character spawn mode is active.</param>
     public void SetSpawnMode(bool value)
     {
         _isSpawnModeActive = value;
@@ -167,13 +180,11 @@ public class ConvaiCharacterSpawner : MonoBehaviour
     /// <summary>
     /// Checks if the pointer is over any UI object.
     /// </summary>
-    /// <param name="finger">Information about the touch input.</param>
-    /// <returns>True if the pointer is over a UI object; otherwise, false.</returns>
     private bool IsPointerOverUIObject(Finger finger)
     {
-        PointerEventData eventDataCurrentPosition = new(EventSystem.current);
+        PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
         eventDataCurrentPosition.position = finger.screenPosition;
-        List<RaycastResult> results = new();
+        List<RaycastResult> results = new List<RaycastResult>();
         EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
         return results.Count > 0;
     }
