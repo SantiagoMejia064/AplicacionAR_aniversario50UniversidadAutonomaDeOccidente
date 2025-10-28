@@ -5,13 +5,13 @@ public class ControladorAsistente : MonoBehaviour
     [Header("Asistente Convai")]
     [SerializeField] private GameObject assistant; // Tu modelo 3D del asistente
 
-    [Header("Botones para videos")]
+    [Header("Botones para videos")]//Nuevo
     [SerializeField] private GameObject los80sButton;
     [SerializeField] private GameObject los90sButton;
     [SerializeField] private GameObject los2000sButton;
     [SerializeField] private GameObject los2010sButton;
 
-    [Header("Targets de las secciones")]
+    [Header("Targets de las secciones")] 
     [SerializeField] private Transform seccion70s;
     [SerializeField] private Transform seccion80s;
     [SerializeField] private Transform seccion90s;
