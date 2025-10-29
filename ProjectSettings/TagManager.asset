@@ -8,6 +8,8 @@ TagManager:
   - MainEstructure
   - SenderTMP
   - Asistente
+  - PodcastLink
+  - YouTubeLink
   layers:
   - Default
   - TransparentFX
