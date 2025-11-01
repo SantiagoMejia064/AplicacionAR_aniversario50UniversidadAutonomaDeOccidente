@@ -11,6 +11,7 @@ namespace Convai.Scripts.Runtime.Features
 {
     /// <summary>
     ///     This class is responsible for handling out all the tasks related to NPC to NPC conversation for a NPC of a group
+    /// //// act
     /// </summary>
     public class ConvaiGroupNPCController : MonoBehaviour
     {
