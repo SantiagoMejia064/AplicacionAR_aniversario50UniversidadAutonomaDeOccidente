@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class VideosManager : MonoBehaviour
 {
-
     public List<GameObject> videosList = new List<GameObject>();
-
     public int currentVideoIndex = 0;
 
     [Header("Secciones de Videos")]
@@ -63,7 +61,7 @@ public class VideosManager : MonoBehaviour
                 break;
         }
     }
-    
+
     public void desactivarSeccion(string seccion)
     {
         // Desactivar la seccion correspondiente
@@ -75,19 +73,19 @@ public class VideosManager : MonoBehaviour
                 break;
             case "90s":
                 seccion90s.SetActive(false);
-                boton90s.SetActive(false);  
+                boton90s.SetActive(false);
                 break;
             case "2000s":
                 seccion2000s.SetActive(false);
-                boton2000s.SetActive(false);    
+                boton2000s.SetActive(false);
                 break;
             case "2010s":
                 seccion2010s.SetActive(false);
-                boton2010s.SetActive(false);    
+                boton2010s.SetActive(false);
                 break;
             default:
                 Debug.LogWarning("Sección no reconocida: " + seccion);
                 break;
         }
-    }   
+    }
 }
