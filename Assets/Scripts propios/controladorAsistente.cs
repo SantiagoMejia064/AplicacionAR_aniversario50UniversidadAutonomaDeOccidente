@@ -5,11 +5,8 @@ public class ControladorAsistente : MonoBehaviour
     [Header("Asistente Convai")]
     [SerializeField] private GameObject assistant; // Tu modelo 3D del asistente
 
-    [Header("Botones para videos")]//Nuevo
-    [SerializeField] private GameObject los80sButton;
-    [SerializeField] private GameObject los90sButton;
-    [SerializeField] private GameObject los2000sButton;
-    [SerializeField] private GameObject los2010sButton;
+    // ¡ELIMINADOS LOS CAMPOS DE BOTONES! 
+    // Ahora el script VideoActivator maneja la visibilidad de los botones de video.
 
     [Header("Targets de las secciones")] 
     [SerializeField] private Transform seccion70s;
@@ -31,10 +28,7 @@ public class ControladorAsistente : MonoBehaviour
         // Solo si quien entra es la cámara / jugador
         if (!other.CompareTag("MainCamera")) return;
 
-        // DEBUG: confirmar colisión
-        //Debug.Log("Trigger detectado en: " + gameObject.name + " por: " + other.name);
-
-        // Dependiendo del trigger, mover el asistente
+        // Dependiendo del trigger (Macro-Trigger), mover el asistente
         switch (gameObject.name)
         {
             case "Seccion los 70 Trigger":
@@ -42,19 +36,15 @@ public class ControladorAsistente : MonoBehaviour
                 break;
             case "Seccion los 80 Trigger":
                 TeletransportarAsistente(seccion80s, seccionID80s);
-                los80sButton.SetActive(true);
                 break;
             case "Seccion los 90 Trigger":
                 TeletransportarAsistente(seccion90s, seccionID90s);
-                los90sButton.SetActive(true);
                 break;
             case "Seccion los 2000 Trigger":
                 TeletransportarAsistente(seccion2000, seccionID2000);
-                los2000sButton.SetActive(true);
                 break;
             case "Seccion los 2010 Trigger":
                 TeletransportarAsistente(seccion2010, seccionID2010);
-                los2010sButton.SetActive(true);
                 break;
             default:
                 Debug.LogWarning("Trigger no reconocido: " + gameObject.name);
@@ -64,27 +54,8 @@ public class ControladorAsistente : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        // Solo si quien sale es la cámara / jugador
+        // El Macro-Trigger ya no necesita hacer nada al salir.
         if (!other.CompareTag("MainCamera")) return;
-
-        // Dependiendo del trigger, desactivar botones
-        switch (gameObject.name)
-        {
-            case "Seccion los 80 Trigger":
-                los80sButton.SetActive(false);
-                break;
-            case "Seccion los 90 Trigger":
-                los90sButton.SetActive(false);
-                break;
-            case "Seccion los 2000 Trigger":
-                los2000sButton.SetActive(false);
-                break;
-            case "Seccion los 2010 Trigger":
-                los2010sButton.SetActive(false);
-                break;
-            default:
-                break;
-        }
     }
 
     private void TeletransportarAsistente(Transform target, string seccionID = "")
@@ -100,6 +71,5 @@ public class ControladorAsistente : MonoBehaviour
         assistant.transform.rotation = target.rotation;
 
         Debug.Log("Asistente movido a: " + target.position);
-
     }
 }
